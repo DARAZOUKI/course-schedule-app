@@ -9,8 +9,9 @@ import { Course } from './course.model';
 export class CourseScheduleService {
   private apiUrl = 'https://webbutveckling.miun.se/files/ramschema_ht23.json';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) { } // Dependency injection for HttpClient
 
+  // Method to fetch course schedule data from the api
   getCourses(): Observable<Course[]> {
     return this.http.get<Course[]>(this.apiUrl);
   }
