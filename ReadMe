@@ -1,0 +1,33 @@
+# Course Schedule App
+
+## Description
+This Angular application fetches course schedule data from a web service and presents it in a tabular format on the web page. Users can sort the data by course code, course name, and progression. Additionally, users can search/filter the data by entering a search term in the input field.
+
+## Task Description
+The task was to create an Angular application that communicates with a web service to fetch course schedule data. The application should display the data in a table format and allow users to sort and filter the data dynamically without reloading the page. Key requirements included:
+- Fetching course schedule data from a web service using HttpClient
+- Displaying the data in a table with columns for course code, course name, and progression
+- Implementing sorting functionality for course code, course name, and progression
+- Implementing filtering functionality to search/filter courses by course code or course name
+- Updating the user interface dynamically in response to sorting and filtering actions
+
+## Technologies Used
+- Angular: Front-end framework for building single-page web applications
+- TypeScript: Programming language for building Angular applications
+- HTML/CSS: Markup and styling languages for structuring and styling web pages
+- HttpClient: Angular module for making HTTP requests
+- RxJS: Library for reactive programming used for handling asynchronous operations.
+
+## Structure
+- `src/app/components`: Contains Angular components.
+- `src/app/course-schedule.model.ts`: Contains data model inteface (Course).
+- `src/app/assets`: Contains static assets such as images or CSS files
+- `src/app/app.module.ts`: Angular module file where components, services, and other modules are declared
+- `src/app/courseSchedule/courseSchedule.component.html`: HTML template file for the course schedule component
+- `src/app/courseSchedule/courseSchedule.component.ts`: TypeScript file for the course schedule component
+- `src/app/course-schedule.service.ts`: Angular service file for fetching course schedule data.
+
+## Author
+Dania Abd Al majeed - [DARAZOUKI] (https://github.com/DARAZOUKI).
+
+
