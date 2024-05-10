@@ -1,3 +1,6 @@
 import { Routes } from '@angular/router';
-
-export const routes: Routes = [];
+import { CourseScheduleComponent } from './courseSchedule/courseSchedule.component';
+export const routes: Routes = [
+    { path: 'courseSchedule', component: CourseScheduleComponent},
+    { path: '', redirectTo : '/courseSchedule' , pathMatch: 'full'},
+];

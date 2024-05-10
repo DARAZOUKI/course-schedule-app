@@ -1,0 +1,22 @@
+<h2>Course Schedule</h2>
+
+<input type="text" [(ngModel)]="searchTerm" placeholder="Search..." />
+
+<table>
+  <thead>
+    <tr>
+      <th (click)="sortData('code')">Course Code</th>
+      <th (click)="sortData('coursename')">Course Name</th>
+      <th (click)="sortData('progression')">Progression</th>
+      <th>Syllabus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let course of filteredCourses">
+      <td>{{ course.code }}</td>
+      <td>{{ course.coursename }}</td>
+      <td>{{ course.progression }}</td>
+      <td><a [href]="course.syllabus" target="_blank">Syllabus</a></td>
+    </tr>
+  </tbody>
+</table>
